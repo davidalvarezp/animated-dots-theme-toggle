@@ -10,7 +10,7 @@ A minimal, elegant website template featuring an animated floating dots backgrou
 
 ## Live Demo
 
-**[View Live Demo](https://davidalvarezp.github.io/particletheme/)**
+**[View Live Demo](https://davidalvarezp.github.io/animated-dots-theme-toggle/)**
 
 Experience the animated particle background and theme switching in action!
 
