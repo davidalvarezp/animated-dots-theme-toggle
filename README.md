@@ -9,12 +9,12 @@ A minimal, elegant website template featuring an animated floating dots backgrou
 
 ## Features
 
-- 🎨 **Animated Particle Background** - Floating dots that connect and move gracefully
-- 🌙 **Automatic Theme Detection** - Adapts to your system's light/dark mode preference
-- 📱 **Fully Responsive** - Works perfectly on all devices and screen sizes
-- ⚡ **Zero Dependencies** - Pure vanilla JavaScript and CSS
-- 💫 **Smooth Animations** - CSS transitions and requestAnimationFrame for buttery smoothness
-- 🎯 **Minimal Design** - Clean, distraction-free interface
+- **Animated Particle Background** - Floating dots that connect and move gracefully
+- **Automatic Theme Detection** - Adapts to your system's light/dark mode preference
+- **Fully Responsive** - Works perfectly on all devices and screen sizes
+- **Zero Dependencies** - Pure vanilla JavaScript and CSS
+- **Smooth Animations** - CSS transitions and requestAnimationFrame for buttery smoothness
+- **Minimal Design** - Clean, distraction-free interface
 
 ## Quick Start
 
@@ -36,7 +36,7 @@ npx http-server
 ```
 Then visit http://localhost:8000 in your browser.
 
-## 🛠️ Customization
+## Customization
 ### Colors
 Edit the CSS custom properties in styles.css:
 
