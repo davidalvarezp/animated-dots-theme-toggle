@@ -6,6 +6,13 @@ A minimal, elegant website template featuring an animated floating dots backgrou
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)
 ![CSS](https://img.shields.io/badge/CSS-3-blue.svg)
 ![HTML](https://img.shields.io/badge/HTML-5-orange.svg)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen.svg)
+
+## Live Demo
+
+**[View Live Demo](https://davidalvarezp.github.io/particletheme/)**
+
+Experience the animated particle background and theme switching in action!
 
 ## Features
 
