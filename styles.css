@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Tema oscuro (default) */
+  --bg-primary: #000000;
+  --text-primary: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --text-primary: #000000;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+html, body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+canvas#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Botón de tema CENTRADO */
+.theme-toggle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: var(--bg-primary);
+  border: 1px solid var(--text-primary);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px var(--shadow-color);
+  opacity: 0.9;
+}
+
+.theme-toggle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+  box-shadow: 0 12px 40px var(--shadow-color);
+}
+
+[data-theme="light"] .theme-icon {
+  content: "☀️";
+}
+
+/* Efectos de aparición */
+.theme-toggle {
+  animation: buttonAppear 0.8s ease-out;
+}
+
+@keyframes buttonAppear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Crédito abajo */
+.credit {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.credit a {
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] .credit a {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.credit a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Efecto de aparición para el crédito */
+.credit {
+  animation: creditAppear 1s ease-out 0.5s both;
+}
+
+@keyframes creditAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 0.7;
+    transform: translateX(-50%) translateY(0);
+  }
+}
