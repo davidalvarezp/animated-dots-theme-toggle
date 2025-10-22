@@ -135,4 +135,4 @@ davidalvarezp
 - Creative Commons for the open license
 - The web development community for inspiration
 
-## ⭐ If you find this project useful, please give it a star on GitHub!
+## If you find this project useful, please give it a star on GitHub!
