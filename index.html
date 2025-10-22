@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>davidalvarezp</title>
+  <meta name="description" content="Minimal website with animated floating dots background and automatic theme switching. Pure CSS/JS with system theme detection and smooth animations.">
+  <meta name="author" content="davidalvarezp">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  
+  <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+    <span class="theme-icon">🌙</span>
+  </button>
+  
+  <div class="credit">
+    <p>By <a href="https://davidalvarezp.com" target="_blank">davidalvarezp</a></p>
+  </div>
+  <script src="theme.js"></script>
+  <script src="background.js"></script>
+</body>
+</html>
